@@ -13,7 +13,10 @@ function addLoss() {
 function randomIntFromInterval() {
   return Math.floor(Math.random() * (102) + 19);
 }
-
+function reset() {
+  var counter = 0;
+  $('#yourScore').text(counter);
+}
 $("#scoreToMatch").text(targetNumber);
 
 for (var i = 0; i < 4; i++) {
@@ -25,10 +28,8 @@ for (var i = 0; i < 4; i++) {
 }
 
 $(".crystal-image").on("click", function() {   
-  var crystalValue = ($(this).attr("data-crystalvalue"));
+  var crystalValue = $(this).attr("data-crystalvalue");
   crystalValue = parseInt(crystalValue);
-  // We then add the crystalValue to the user's "counter" which is a global variable.
-  // Every click, from every crystal adds to the global counter.
   counter += crystalValue;
   $('#yourScore').text(counter);
   if (counter === targetNumber) {
@@ -40,5 +41,6 @@ $(".crystal-image").on("click", function() {
     alert("You lose!!");
     losses++;
     addLoss();
+    reset();
   }
 });
