@@ -2,7 +2,13 @@ var targetNumber = randomNumber();
 var wins = 0;
 var losses = 0;
 var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-var crystalImages = ["http://images.clipartpanda.com/crystal-clipart-Crystals-occur-in-nature-2016012906.svg", 'https://www.bestcrystals.com/Content/Images/uploaded/NewFolder2/KyaniteImage.jpg', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sodalith_-_Rohstein.jpg/766px-Sodalith_-_Rohstein.jpg', 'http://24.media.tumblr.com/56d2cea9a56966fa3e1d26d559579c6b/tumblr_mv0wya4Kev1rmdrjqo1_400.png', 'http://www.billboard.com/files/media/05-crystals-billboard-2017-embed.jpg']
+var crystalImages = [ 
+                      'http://24.media.tumblr.com/56d2cea9a56966fa3e1d26d559579c6b/tumblr_mv0wya4Kev1rmdrjqo1_400.png', 
+                      'http://www.soulfulcrystals.co.uk/wp-content/uploads/2013/11/crystals-shop.jpg',
+                      'https://ak9.picdn.net/shutterstock/videos/5136509/thumb/1.jpg',
+                      'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Amethystemadagascar2.jpg/1200px-Amethystemadagascar2.jpg',
+                      'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Selpologne.jpg/1124px-Selpologne.jpg',
+                    ]
 
 function addWin() {
   $('#wins').text(wins);

@@ -1,5 +1,16 @@
+body {
+	background: black;
+	color: white;
+	font-family: crystalline;
+}
+
 .crystal-image {
   width: 300px;
   height: 300px;
   margin: 0 7px;
+}
+
+@font-face {
+    font-family: crystalline;
+    src: url(../font/crystalline.ttf);
 }
